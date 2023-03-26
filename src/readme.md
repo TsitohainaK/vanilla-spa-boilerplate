@@ -1,32 +1,11 @@
-# Component, View stucture
+# General structure :dart:
 
-## render()
-a component is a function that return atleast a render function, i.e the html in as a string 
+`app.js` is the entry point of the application
+it only contain the app initialisation with a css import and routes.
 
-## script()
-paired with the actual script this function is used to handle the changement on the his html,
-so it is called after the render function, this function is optional but if it exist,
-it need to be returned with the render function as 
+## Views 
 
-### exemple
-here an exemple of how a component or view file should look like
+A view contain atleast one file, i.e `{name}_view.js` a file containing the elements creation.
+A view can import a script file `{name}_script.js`, wich contain the view's logic.
 
-`
-export default function Exemple(){
-  /* Here your script that will be called before the render */
-  const user = "John Doe"
-  
-  function script(){
-    /* Here your script that will be called after the render */
-  }
-
-  /* Your html code here */
-  const render = () => 
-  /*html*/
-  `<h1>Hello ${user}, welcome</h1>`;
-
-  return {
-    render, script
-  }
-}
-`
+I tried to make all things self explainatory but i'll keep adding more things in those readme file.

@@ -1,8 +1,10 @@
-# boilerplate-vanilla-spa
+# boilerplate-vanilla-spa :flying_saucer:
 My boilerplate for a vanilla js spa, the main goal of this is to build an SPA with just basic javascript
 no dependecies needed, yet, just run with:
 
-```npm start```
+```
+  npm start
+```
 
 and your are good to go.
 
@@ -13,4 +15,4 @@ so, maybe have to do it manualy
 
 I keep working on this
 
-please put a little **star** on it if you fell like doing it :smile:
+please put a little **star** on it if you feel like doing it :wink:
