@@ -3,7 +3,7 @@
 Routes contain all of your route for all different pages.
 Here you import all of your pages and attribute them to a path so it return your page when requested
 
-The routes object contain route object
+The routes object contain route objects
 
 route's should have
 
@@ -11,7 +11,7 @@ route's should have
 
 - **path** for acceding the route
 
-- **element** element rendered when the route is requested
+- **element** rendered when the route is requested
 
 - **title** you can add title to the object to change the navigator page title when the user is in the current route
 
@@ -22,6 +22,7 @@ as exemple:
     name: "home",
     path: "/",
     element: Home
+    title: "Home page"
   }
 ```
 
