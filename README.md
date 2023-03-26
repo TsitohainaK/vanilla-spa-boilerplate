@@ -1,4 +1,4 @@
-# boilerplate-vanilla-spa :flying_saucer:
+# boilerplate-vanilla-spa :bread: (bread, a silly name i call it)
 My boilerplate for a vanilla js spa, the main goal of this is to build an SPA with just basic javascript
 no dependecies needed, yet, just run with:
 

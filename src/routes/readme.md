@@ -13,6 +13,8 @@ route's should have
 
 - **element** element rendered when the route is requested
 
+- **title** you can add title to the object to change the navigator page title when the user is in the current route
+
 as exemple:
 
 ```js

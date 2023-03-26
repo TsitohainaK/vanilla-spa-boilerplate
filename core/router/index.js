@@ -40,10 +40,19 @@ export const navigateTo = (url) => {
   eventedPushState(url);
 }
 
+const removeOtherScripts = () => {
+  //starting at 1 to not remove the app script
+  const scripts = document.body.querySelectorAll('script');
+  for (let i = 1; i < scripts.length; i++) {
+    scripts[i].remove();
+  }
+}
+
 export const onRouteChange = (cb) => {
   window.addEventListener(
     "pushstate",
     () => {
+      removeOtherScripts();
       cb();
     },
     false
@@ -52,6 +61,7 @@ export const onRouteChange = (cb) => {
   window.addEventListener(
     "popstate",
     () => {
+      removeOtherScripts();
       cb();
     },
     false

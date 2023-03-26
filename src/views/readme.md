@@ -1,4 +1,4 @@
-# Views :eyes:
+# Views :eye:
 
 It is suggered to make a folder for each views.
 
@@ -46,7 +46,7 @@ here an exemple of all of that:
 
 export default createComponent(() => {
   return e("nav", { id: "navbar" }, [
-    e("h1",{id:'brand'},'Tsito'),
+    e("h1",{id:'brand'},'Bread'),
     e("a",{href:'contact'},'Contact me')]
   );
 },'src/views/{name}/{name}_script.js','src/views/{name}/{name}.css');

@@ -1,6 +1,6 @@
 import { select } from "../../../core/virtualDom/index.js";
 
-select("Home", (home) => {
+select("home", (home) => {
   let i = 0;
 
   select("btn", (btn) => {

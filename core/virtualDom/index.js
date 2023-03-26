@@ -78,7 +78,7 @@
 //   }
 // }
 
-export function e(tagName, attributes, childs) {
+export function e(tagName, attributes={}, childs='') {
   const elt = document.createElement(tagName);
 
   for (const attribute in attributes) {
@@ -118,7 +118,15 @@ export function css(srcs) {
   }
 }
 
+export function title(name){
+  if(document.querySelector('head title')){
+    const _title = document.querySelector("head title");
+    _title.textContent = name;
+    document.title = name
+  }
+}
+
 export function select(id, cb) {
   const elt = document.getElementById(id);
-  cb(elt);
+  if(elt) cb(elt);
 }

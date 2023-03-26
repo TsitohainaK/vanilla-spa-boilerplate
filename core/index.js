@@ -1,11 +1,16 @@
 import { createRoute, onRouteChange, routerLink } from "./router/index.js";
+import { title } from "./virtualDom/index.js";
 
-export default function createApp(rootElt, routes) {
+export default function createApp(appName,rootElt, routes) {
   const render = () => {
     const route = createRoute(routes);
-    rootElt.append(route.element);
+    if(route.title) title(route.title);
+    else title(appName)
+    rootElt.innerHTML = '';
+    rootElt.append(route.element)
     routerLink();
   };
+
 
   render();
   onRouteChange(render);
