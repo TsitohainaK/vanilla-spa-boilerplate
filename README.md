@@ -2,14 +2,15 @@
 My boilerplate for a vanilla js spa, the main goal of this is to build an SPA with just basic javascript
 no dependecies needed, yet, just run with:
 
-`npm run dev`
+```npm start```
 
-using es6-string-html extension will make it easier to code the html code in the return string
-just prefix the return with
-`/*html*/`
+and your are good to go.
 
+I had to write my own little server to serve all the file requested, it may have some bug but getting there slowly
 
-this doesn't have a compiler cause the way it is intented to be, i can't install any dependency,
-so, have to do it manualy
+This doesn't have a compiler cause the way it is intented to be, i can't install any dependency,
+so, maybe have to do it manualy
 
-and this is not yet the final version, i keep working on this
+I keep working on this
+
+please put a little **star** on it if you fell like doing it :smile:

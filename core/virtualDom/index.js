@@ -105,14 +105,14 @@ export function css(srcs) {
   if (Array.isArray(srcs)) {
     srcs.forEach((src) => {
       const link = document.createElement("link");
-      link.setAttribute("type", "stylesheet");
+      link.setAttribute("rel", "stylesheet");
       link.setAttribute("href", src);
       document.head.appendChild(link);
     });
   } else {
     const src = src;
     const link = document.createElement("link");
-    link.setAttribute("type", "stylesheet");
+    link.setAttribute("rel", "stylesheet");
     link.setAttribute("href", src);
     document.head.appendChild(link);
   }

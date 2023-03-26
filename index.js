@@ -32,15 +32,15 @@ http
     }
 
     const extensions = [".js", ".css", ".png", ".jpg", ".ico", ".svg"];
-    let dest = (extensions.find(()=>extname) == undefined || req.url == "/") ? "index.html" : req.url ;
+    let dest = extensions.find(() => extname) == undefined || req.url == "/" ? "index.html" : req.url;
     fs.readFile(path.join(__dirname, "", dest), (err, data) => {
-      if(err){
-        res.writeHead(err.code == "ENOENT" ? 404 : 400, {"Content-Type": 'text/plain'});
-        res.end(err.message ? err.message : err)
+      if (err) {
+        res.writeHead(err.code == "ENOENT" ? 404 : 400, { "Content-Type": "text/plain" });
+        res.end(err.message ? err.message : err);
         return;
       }
       res.writeHead(200, { "Content-Type": contentType });
-      res.end(data, "utf8"); 
+      res.end(data, "utf8");
     });
   })
   .listen(port, () => {
