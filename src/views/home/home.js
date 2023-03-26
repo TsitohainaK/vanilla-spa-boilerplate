@@ -2,7 +2,7 @@ import useMoneyStore from "../../store/moneyStore.js";
 import useConsoStore from "../../store/consoStore.js";
 import { storageGet, storageSet } from "../../utils/localStorage.js";
 import Consomation from "./consomation.js";
-import { ref, watch } from "../../utils/reactivity.js";
+import { ref, watch } from "../../../core/reactivity.js";
 import ChangeCurrendBalanceModal from "./changeCurrentBalanceModal.js";
 
 export default function Home() {

@@ -1,4 +1,4 @@
-import { emit } from "../../utils/reactivity.js";
+import { emit } from "../../../core/reactivity.js";
 
 export default function ChangeCurrendBalanceModal() {
   const app = document.getElementById("app");

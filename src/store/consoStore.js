@@ -1,4 +1,4 @@
-import { ref } from "../utils/reactivity.js";
+import { ref } from "../../core/reactivity.js";
 
 const consos = ref([]);
 

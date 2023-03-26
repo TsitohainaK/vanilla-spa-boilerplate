@@ -1,4 +1,4 @@
-import { ref } from "../utils/reactivity.js";
+import { ref } from "../../core/reactivity.js";
 import useConsoStore from "./consoStore.js";
 
 const actual = ref(0);

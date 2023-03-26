@@ -3,7 +3,7 @@ import useMoneyStore from "../../store/moneyStore.js";
 import useConsoStore from "../../store/consoStore.js";
 import { storageSet } from "../../utils/localStorage.js";
 import { navigateTo } from "../../routes/router.js";
-import { ref } from "../../utils/reactivity.js";
+import { ref } from "../../../core/reactivity.js";
 
 export default function AddConso() {
   const moneyStore = useMoneyStore();
