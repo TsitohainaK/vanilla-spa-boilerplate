@@ -6,7 +6,7 @@
 export const createRoute = (routes, fallback = () =>"Error 404 not found") => {
   const path = window.location.pathname;
   const route = Object.values(routes).find((route) => route.path == path);
-  return route ? route : {render: fallback};
+  return route ? route : {element: fallback};
 };
 
 /**
