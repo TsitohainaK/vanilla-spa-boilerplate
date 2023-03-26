@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p,a{
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+input,
+input:focus {
+  outline: none;
+}
