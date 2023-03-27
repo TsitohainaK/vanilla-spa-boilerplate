@@ -51,19 +51,21 @@ const removeOtherScripts = () => {
 export const onRouteChange = (cb) => {
   window.addEventListener(
     "pushstate",
-    () => {
+    (e) => {
+      e.preventDefault()
       removeOtherScripts();
       cb();
     },
-    false
+    true
   );
 
   window.addEventListener(
     "popstate",
-    () => {
+    (e) => {
+      e.preventDefault()
       removeOtherScripts();
       cb();
     },
-    false
+    true
   );
 }

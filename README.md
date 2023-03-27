@@ -16,3 +16,6 @@ so, maybe have to do it manualy
 I keep working on this
 
 please put a little **star** on it if you feel like doing it :wink:
+
+minor bug not resolved (yet!):
+- changing route add more history than needed
