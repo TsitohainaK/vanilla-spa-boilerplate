@@ -1,5 +1,5 @@
 # boilerplate-vanilla-spa :bread: (bread)
-My boilerplate for a vanilla js spa, the main goal of this is to build an SPA with just basic javascript
+My boilerplate for a vanilla js spa, the main goal of this is to build an SPA with just pure javascript
 no dependecies needed, yet, just run with:
 
 ```
