@@ -10,7 +10,7 @@ and your are good to go.
 
 I had to write my own little server to serve all the file requested, it may have some bug but getting there slowly
 
-This doesn't have a compiler cause the way it is intented to be, i can't install any dependency,
+This doesn't have a compiler(minify, uglify?) cause the way it is intented to be, i can't install any dependency,
 so, maybe have to do it manualy
 
 I keep working on this
