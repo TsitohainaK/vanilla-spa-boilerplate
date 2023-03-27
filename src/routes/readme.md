@@ -21,7 +21,7 @@ as exemple:
   home: {
     name: "home",
     path: "/",
-    element: Home
+    element: Home,
     title: "Home page"
   }
 ```
