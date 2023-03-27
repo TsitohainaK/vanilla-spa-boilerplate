@@ -78,6 +78,13 @@
 //   }
 // }
 
+/**
+ * 
+ * @param {string} tagName 
+ * @param {*} attributes 
+ * @param {string | HTMLElement | HTMLElement[]} childs 
+ * @returns 
+ */
 export function e(tagName, attributes={}, childs='') {
   const elt = document.createElement(tagName);
 
@@ -126,6 +133,11 @@ export function title(name){
   }
 }
 
+/**
+ * 
+ * @param {string} id the element target id
+ * @param {() => void} cb call back contain the element selectionned
+ */
 export function select(id, cb) {
   const elt = document.getElementById(id);
   if(elt) cb(elt);

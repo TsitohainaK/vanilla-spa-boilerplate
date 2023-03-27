@@ -52,3 +52,35 @@ export default createComponent(() => {
 },'src/views/{name}/{name}_script.js','src/views/{name}/{name}.css');
 
 ```
+
+## Handling script (interaction with the view)
+
+Although you create the view in a Js file you cant interact with the html you return, yet you can do things like getting data before creating the element and assining it to an element.
+
+```js
+export default createComponent(() => {
+  // getting data from localStorage
+  const name = localStorage.getItem('username');
+
+  return e("div", { id: "user" },
+    e("h1",{id:'name'},`Welcome ${name}`)
+  );
+})
+```
+
+**In the `{name}_script.js` file** you can then handle the component and its childs script. In a script file you may use `select()` function given in the `core/virtualDom/index.js` it select and return for you the element you want in the callback props by it's **#id** so it save you a few line and help for a better readability.
+
+as exemple
+``` js
+import { select } from "../../../core/virtualDom/index.js";
+
+select("home", (home) => {
+  let i = 0;
+
+  select("btn", (btn) => {
+    btn.onclick = () => {
+      btn.innerHTML = ++i;
+    }
+  });
+});
+```
