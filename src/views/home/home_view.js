@@ -3,6 +3,5 @@ import { e } from "../../../core/virtualDom/index.js";
 
 export default createComponent(() => {
 
-  return e("div", { id: "home", class: "flex" }, [e("button", { id: "btn" }, "0"),e('img',{src:"src/assets/test.jpg"}),
-e('a', {class:'link', href:'test'},'test')]);
-}, "src/views/home/home_script.js");
+  return e("h1", { id: "home", class: "flex" }, "This is a demonstration");
+}, "src/views/home/home_script.js", "src/views/home/home_style.css");

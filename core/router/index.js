@@ -1,9 +1,9 @@
 /**
  * a component can be passed for 404 error
- * @param {*} fallback 
+ * @param {string | HTMLElement} fallback 
  * @returns 
  */
-export const createRoute = (routes, fallback = () =>"Error 404 not found") => {
+export const createRoute = (routes, fallback = 'Error: page not found') => {
   const path = window.location.pathname;
   const route = Object.values(routes).find((route) => route.path == path);
   return route ? route : {element: fallback};

@@ -117,7 +117,7 @@ export function css(srcs) {
       document.head.appendChild(link);
     });
   } else {
-    const src = src;
+    const src = srcs;
     const link = document.createElement("link");
     link.setAttribute("rel", "stylesheet");
     link.setAttribute("href", src);
@@ -140,5 +140,6 @@ export function title(name){
  */
 export function select(id, cb) {
   const elt = document.getElementById(id);
+  if(!elt) console.warn(`select: The element with '${id}' are not found.`);
   if(elt) cb(elt);
 }
