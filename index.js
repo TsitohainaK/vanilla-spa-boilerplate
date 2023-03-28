@@ -38,7 +38,16 @@ const server = http.createServer((req, res) => {
 
   const extensions = [".js", ".css", ".png", ".jpg", ".ico", ".svg"];
   let dest = extensions.find(() => extname) == undefined || req.url == "/" ? "index.html" : req.url;
-  fs.readFile(path.join(__dirname, "", dest), (err, data) => {
+  let pCount = 0;
+  for(d of dest){
+    if(d=="."){pCount++};
+    if(pCount>1){
+      res.writeHead(400, { "Content-Type": "text/plain" });
+      res.end();
+      return
+    }
+  }
+  fs.readFile(path.join(__dirname, dest), (err, data) => {
     if (err) {
       res.writeHead(err.code == "ENOENT" ? 404 : 400, { "Content-Type": "text/plain" });
       res.end(err.message ? err.message : err);

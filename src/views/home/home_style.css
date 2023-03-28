@@ -21,3 +21,17 @@
 #home .title {
   font-size: 2.6rem;
 }
+
+#home a {
+  color: #e63dc1;
+}
+
+#home button {
+  background-color: #03080c;
+  padding: 0.8rem;
+} 
+
+#home button:hover {
+  background-color: #266192;
+  transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.2s;
+}
