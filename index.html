@@ -14,8 +14,14 @@
         socket.addEventListener("open", (event) => {
           console.log("WebSocket connection established");
         });
+        socket.addEventListener("error", (event) => {
+          console.log("WebSocket some error occured");
+        });
         socket.addEventListener("message", (event) => {
           location.reload();
+        });
+        socket.addEventListener("close", (event) => {
+          console.log("WebSocket connection closed");
         });
       }
     </script>
