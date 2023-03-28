@@ -6,20 +6,34 @@
 
   background-color: #0d171f;
   color: #ddd;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  position: relative;
 }
 
 #home .emoji {
   font-size: 50pt;
+  position: relative;
+  animation: bounce 3s ease-in-out infinite;
+
 }
 
 #home .title {
   font-size: 2.6rem;
+  font-family: monospace;
+  font-weight: bold;
+
+  animation: blur-appear 3s ease;
+  opacity: 1;
+}
+
+#home .thanking {
+  color: #aaa;
 }
 
 #home a {
@@ -29,9 +43,39 @@
 #home button {
   background-color: #03080c;
   padding: 0.8rem;
-} 
+}
 
 #home button:hover {
   background-color: #266192;
   transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.2s;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 15px;
+  color: #aaa;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: -20px;
+  }
+}
+
+@keyframes blur-appear {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
 }
