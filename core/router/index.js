@@ -29,6 +29,12 @@ export const routerLink = () => {
       link.addEventListener("click", (e) => {
         e.preventDefault();
         const url = e.target.getAttribute("href");
+        const valid = /^(ftp|http|https):\/\/[^ "]+$/.test(url);
+        if(valid){
+          const target = e.target.getAttribute("target") || "_blank";
+          window.open(url,target);
+          return;
+        }
         eventedPushState(url);
       });
     });
