@@ -6,7 +6,7 @@ It is suggered to make a folder for each views.
 - create a folder by the name of the view
 - create a file named `{name}_view.js`
 
-in the `{name}_view.js` we have just to make an export default of the `createComponent` function in the **core**, and then you can create any element by using `e` function in the **virtualDom**.
+in the `{name}_view.js` we have just to make an export default of a fumction that return the `createComponent` function in the **core**, and then you can create any element by using `e` function in the **virtualDom**.
 
 It should look like this:
 
@@ -14,7 +14,7 @@ It should look like this:
 import { createComponent } from "../../../core/component/index.js";
 import { e } from "../../../core/virtualDom/index.js";
 
-export default createComponent(() => {
+export default () => createComponent(() => {
   return e("h1", { id: "title" }, 'Hello, world');
 });
 
@@ -44,7 +44,7 @@ here an exemple of all of that:
 
 ``` js
 
-export default createComponent(() => {
+export default () => createComponent(() => {
   return e("nav", { id: "navbar" }, [
     e("h1",{id:'brand'},'Bread'),
     e("a",{href:'contact'},'Contact me')]
@@ -58,7 +58,7 @@ export default createComponent(() => {
 Although you create the view in a Js file you cant interact with the html you return, yet you can do things like getting data before creating the element and assining it to an element.
 
 ```js
-export default createComponent(() => {
+export default () => createComponent(() => {
   // getting data from localStorage
   const name = localStorage.getItem('username');
 

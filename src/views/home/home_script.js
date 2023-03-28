@@ -3,9 +3,9 @@ import { select } from "../../../core/virtualDom/index.js";
 select("home", (home) => {
   let i = 0;
 
-  select("btn", (btn) => {
+  select("count", (btn) => {
     btn.onclick = () => {
-      btn.innerHTML = ++i;
+      btn.innerHTML = `count: ${++i}`;
     }
   });
 

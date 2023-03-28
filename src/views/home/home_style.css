@@ -1,0 +1,9 @@
+#home {
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+
+  background-color: #0d171f;
+  color: #ddd;
+}

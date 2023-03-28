@@ -7,7 +7,7 @@ export default function createApp(appName,rootElt, routes) {
     if(route.title) title(route.title);
     else title(appName)
     rootElt.innerHTML = '';
-    rootElt.append(route.element)
+    rootElt.append(route.element())
     routerLink();
   };
 

@@ -3,13 +3,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: inherit;
+  border:none;
+  color:inherit;
 }
 
-h1,h2,h3,h4,h5,h6,p,a{
+h1,h2,h3,h4,h5,h6,p,a,button{
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
-  color: black;
+  color: inherit;
+}
+
+button:hover{
+  cursor: pointer;
 }
 
 input,
