@@ -19,3 +19,11 @@ please put a little **star** on it if you feel like doing it :wink:
 
 minor bug not resolved (yet!):
 - changing route add more history than needed
+
+it have hot reload BUT you should run
+```
+npm install
+```
+for it to run, however this can still work without you downloading it.
+
+I'm working on implementing a little web socket so i'll throw up the 'ws'.

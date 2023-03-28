@@ -11,7 +11,6 @@ export default function createApp(appName,rootElt, routes) {
     routerLink();
   };
 
-
   render();
   onRouteChange(render);
 }

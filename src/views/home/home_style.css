@@ -6,4 +6,18 @@
 
   background-color: #0d171f;
   color: #ddd;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#home .emoji {
+  font-size: 50pt;
+}
+
+#home .title {
+  font-size: 2.6rem;
 }

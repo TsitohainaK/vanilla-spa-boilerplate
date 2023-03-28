@@ -5,9 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bread</title>
+
+    <script>
+      // for hot reload, you have to manualy delete it in prod
+      if ("WebSocket" in window) {
+        const socket = new WebSocket("ws://localhost:1080");
+    
+        socket.addEventListener("open", (event) => {
+          console.log("WebSocket connection established");
+        });
+        socket.addEventListener("message", (event) => {
+          location.reload();
+        });
+      }
+    </script>
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="./src/app.js"></script>
+
+    <script type="module" src="./src/app.js" defer></script>
   </body>
 </html>

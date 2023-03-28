@@ -13,7 +13,7 @@ route's should have
 
 - **element** rendered when the route is requested
 
-- **title** you can add title to the object to change the navigator page title when the user is in the current route
+- **title** you can add title to the object to change the navigator page title when the user is in the current route, however you can style change it manualy using the `title` function
 
 as exemple:
 
