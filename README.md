@@ -24,6 +24,6 @@ it have hot reload BUT you should run
 ```
 npm install
 ```
-for it to run, however this can still work without you downloading it.
+for it to run, however this can still work without you installing it.
 
 I'm working on implementing a little web socket so i'll throw up the 'ws'.
